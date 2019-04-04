@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81330434-95a4-4ba5-b09e-01c5ee3ecb6f" name="Default Changelist" comment="" />
+    <list default="true" id="4d997aaa-5b9c-460d-8e2f-2c12215b207c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HelloOthers/src/HelloOthers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwoNumbers/src/TwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WorkingHours.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduce-yourself/src/IntroduceYourself.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumptyDumpty/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HumptyDumpty/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HumptyDumpty.java">
+        <entry file="file://$PROJECT_DIR$/src/WorkingHours.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -39,7 +45,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HumptyDumpty.java" />
+        <option value="$PROJECT_DIR$/src/WorkingHours.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -56,23 +69,21 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="HumptyDumpty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HumptyDumpty" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkingHours" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkingHours" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -91,16 +102,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="HumptyDumpty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HumptyDumpty" />
-      <module name="HumptyDumpty" />
+    <configuration name="WorkingHours" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WorkingHours" />
+      <module name="WorkingHours" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HumptyDumpty" />
+        <item itemvalue="Application.WorkingHours" />
       </list>
     </recent_temporary>
   </component>
@@ -109,17 +120,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81330434-95a4-4ba5-b09e-01c5ee3ecb6f" name="Default Changelist" comment="" />
-      <created>1554372520450</created>
+      <changelist id="4d997aaa-5b9c-460d-8e2f-2c12215b207c" name="Default Changelist" comment="" />
+      <created>1554375717130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554372520450</updated>
-      <workItem from="1554372524325" duration="952000" />
+      <updated>1554375717130</updated>
+      <workItem from="1554375722208" duration="1469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="952000" />
+    <option name="totallyTimeSpent" value="1469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="20" width="1400" height="820" extended-state="0" />
@@ -129,7 +140,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -139,7 +150,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32896653" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32896653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -159,10 +170,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/HumptyDumpty.java">
+    <entry file="file://$PROJECT_DIR$/src/WorkingHours.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
