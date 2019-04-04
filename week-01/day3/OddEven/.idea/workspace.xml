@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86238560-4659-40b1-b474-7d0dcf2ac1da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondsInaDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondsInaDay.java" afterDir="false" />
+    <list default="true" id="91e0bd93-91a8-4c82-a036-6dd242001dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HelloUser/src/HelloUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MilesToKmConverter/src/MilesToKmConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondsInaDay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SecondsInaDay/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SecondsInaDay/src/SecondsInaDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SecondsInaDay/src/SecondsInaDay.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SecondsInaDay.java">
+        <entry file="file://$PROJECT_DIR$/src/OddEven.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="155" selection-start-line="10" selection-start-column="155" selection-end-line="10" selection-end-column="155" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -42,11 +45,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SecondsInaDay.java" />
+        <option value="$PROJECT_DIR$/src/OddEven.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
     <option name="x" value="8" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -58,23 +68,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SecondsInaDay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondsInaDay" type="462c0819:PsiDirectoryNode" />
+              <item name="OddEven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OddEven" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -93,16 +102,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="SecondsInaDay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SecondsInaDay" />
-      <module name="SecondsInaDay" />
+    <configuration name="OddEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OddEven" />
+      <module name="OddEven" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SecondsInaDay" />
+        <item itemvalue="Application.OddEven" />
       </list>
     </recent_temporary>
   </component>
@@ -111,29 +120,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="86238560-4659-40b1-b474-7d0dcf2ac1da" name="Default Changelist" comment="" />
-      <created>1554384073231</created>
+      <changelist id="91e0bd93-91a8-4c82-a036-6dd242001dbe" name="Default Changelist" comment="" />
+      <created>1554387925808</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554384073231</updated>
-      <workItem from="1554384075746" duration="1430000" />
+      <updated>1554387925808</updated>
+      <workItem from="1554387928292" duration="1558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1430000" />
+    <option name="totallyTimeSpent" value="1558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="8" y="20" width="1400" height="820" extended-state="0" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21529563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
+      <window_info anchor="bottom" id="Messages" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -141,7 +150,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32896653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -161,10 +170,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SecondsInaDay.java">
+    <entry file="file://$PROJECT_DIR$/src/OddEven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="155" selection-start-line="10" selection-start-column="155" selection-end-line="10" selection-end-column="155" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
