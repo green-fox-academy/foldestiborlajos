@@ -5,34 +5,18 @@ public class DrawTriangle {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println( "Please, give me a number" );
-        int a = scanner.nextInt();
-        int b = 0;
-        int c = 0;
+        System.out.println("Please, give me a number");
 
+        int g = scanner.nextInt();
 
-        do {System.out.println("*"); b += 1;
-            do {c++; System.out.print("*");} while (c < b);
-            {b += 1;}
-            } while (a > b);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        {for (int i = 0; i < g; i++)
+            {for (int j = 0; j < i; j++)
+            {
+                System.out.print("*");
+            }
+                System.out.println("*");
+            }
+        }
 
     }
 }
