@@ -11,10 +11,7 @@ public class BigTriangle {
     static int HEIGHT = 400;
 
     public static void mainDraw(Graphics graphics) {
-
-
         drawTree(graphics, WIDTH/2,   WIDTH, 10);
-
     }
 
     public static void drawTree(Graphics graphics, int a, int b, int c) {
