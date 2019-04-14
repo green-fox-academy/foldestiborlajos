@@ -26,7 +26,7 @@ public class BigTriangle {
              graphics.drawLine(a+10, b-d, a-10, b-d);
          }
 
-        if (b <= 100) {graphics.drawRect(380,380,10,10);
+        if (b <= 100) {
         }else {
             drawTree(graphics, a+10, b - d, c);
             drawTree(graphics, a-10, b - d, c);
