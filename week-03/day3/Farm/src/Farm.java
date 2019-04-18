@@ -5,14 +5,15 @@ public class Farm {
   int numberOfPlaces;
   List<Animal> barn = new ArrayList<>();
 
-  public Farm (ArrayList barn, int numberOfPlaces){
+  public Farm (List<Animal> barn, int numberOfPlaces){
     this.barn = barn;
     this.numberOfPlaces = numberOfPlaces;
   }
 
-  public void breed(Animal animal) {
+  public void breed() {
     if (numberOfPlaces > barn.size()) {
-        barn.add(animal);
+        Animal animalToken = new Animal();
+        barn.add(animalToken);
     } else {
       System.out.println("Sorry we are full!");
     }
@@ -20,8 +21,11 @@ public class Farm {
 
   public void slaughter(){
     for (int i = 0; i < barn.size(); i++){
-      barn.indexOf().
+       if (barn.get(i).hunger > barn.get(0).hunger){
+         barn.add(0, barn.get(i));
+         barn.remove(barn.get(i));
+       }
     }
-
+    barn.remove(0);
   }
 }
