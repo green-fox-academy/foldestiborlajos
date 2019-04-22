@@ -6,7 +6,6 @@ public class BattleApp {
       List<Pirate> crewBlackPearl = new ArrayList<>();
       Ship blackpearl = new Ship();
 
-
       List<Pirate> crewSzokeTisza = new ArrayList<>();
       Ship szokeTisza = new Ship();
 

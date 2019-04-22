@@ -49,10 +49,8 @@ public class Ship {
           int k = (int) ((Math.random() * ship.size()));
           ship.get(k).drinkSomeRum();
         }
-
-
     }
-      System.out.println( "Your has won!");
+      System.out.println( "Yours has won!");
       whoWins = true;
   }else {
       int rand = (int) ((Math.random() * ship.size()) );
@@ -69,10 +67,9 @@ public class Ship {
         } else {
           int k = (int) ((Math.random() * othership.ship.size()) );
           othership.ship.get(k).drinkSomeRum();
-
         }
       }
-      System.out.println("Othership wins");
+      System.out.println("The other Ship wins");
       whoWins = false;
     }
     return whoWins;

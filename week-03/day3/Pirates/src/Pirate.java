@@ -30,7 +30,6 @@ public class Pirate {
   }
 
   public void brawl(Pirate fightBuddy) {
-
     int fightResult = (int)(Math.random()* 3 + 1);
 
     if(fightResult == 1) {this.die();
@@ -39,8 +38,7 @@ public class Pirate {
     } else {
       System.out.println("They just Passed out.");
     }
-
-    }
+  }
 
     public void isDead(){
       if (stateOfPirate > 0){
@@ -49,8 +47,6 @@ public class Pirate {
         System.out.println("YEEAH! Long live the Queen!");
       }
     }
-
-
   }
 
 
