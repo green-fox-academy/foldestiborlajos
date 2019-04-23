@@ -9,12 +9,20 @@ public class Plant {
     this.water = 0;
   }
 
-  public boolean needsWater() {
-    if ( getWater() < 5){
+  public void needsWater() {
+    if ( getWater() < 100){
       System.out.println( "The " + getColor() + " needs water.");
-      return true;
+
     }else {
       System.out.println( "The " + getColor() + " doesn't needs water");
+
+    }
+  }
+
+  public boolean needsWaterBoolean() {
+    if ( getWater() < 100){
+      return true;
+    }else {
       return false;
     }
   }

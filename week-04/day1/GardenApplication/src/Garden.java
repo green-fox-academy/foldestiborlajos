@@ -12,10 +12,16 @@ public class Garden {
     this.garden.add(plant);
   }
 
+  public void whoNeedsWaterToPrint(){
+    for (Plant plant : garden) {
+      plant.needsWater();
+    }
+  }
+
   public int whoNeedsWater(){
     int numberOfDry = 0;
     for (Plant plant : garden) {
-      if(plant.needsWater() == true){
+      if(plant.needsWaterBoolean()){
         numberOfDry++;
       }
     }
@@ -25,12 +31,14 @@ public class Garden {
   public void watering(int amountOfWatering){
     int y = amountOfWatering /= this.whoNeedsWater() ;
     for (Plant plant : garden) {
-      if (plant.needsWater() ==true) {
+      if (plant.needsWaterBoolean()) {
         plant.addWater(y);
+        plant.needsWater();
       }
-      else {
+      else {plant.needsWater();
       }
+
     }
-    this.whoNeedsWater();
+
   }
 }

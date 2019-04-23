@@ -15,6 +15,8 @@ public class main {
     garden1.addPlant(tree1);
     garden1.addPlant(tree2);
 
+    garden1.whoNeedsWaterToPrint();
+
     garden1.watering(40);
     garden1.watering(70);
 

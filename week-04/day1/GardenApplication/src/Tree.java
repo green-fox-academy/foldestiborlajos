@@ -3,12 +3,19 @@ public class Tree extends Plant{
     super(color);
   }
 
-  public boolean needsWater () {
+  @Override
+  public void needsWater() {
     if (getWater() < 10) {
       System.out.println("The " + getColor() + " needs water.");
-      return true;
     } else {
       System.out.println("The " + getColor() + " doesn't needs water");
+    }
+  }
+  @Override
+  public boolean needsWaterBoolean() {
+    if (getWater() < 10) {
+      return true;
+    } else {
       return false;
     }
   }
