@@ -1,11 +1,5 @@
-import javax.sound.midi.Soundbank;
-import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-import static javax.swing.UIManager.get;
+import java.util.HashMap;
 
 public class ShopingList {
   public static void main(String[] args) {
@@ -37,6 +31,26 @@ public class ShopingList {
        aliceList.put(keyAlice[i], valueAlice[i]);
     }
     System.out.println(aliceList.entrySet());
+
+   sumOfConsumption(bobList, prices);
+   sumOfConsumption(aliceList, prices);
+
+
+
+
+
+}
+  public static void sumOfConsumption(HashMap<String, Double> list, HashMap<String, Double> priceTable){
+    double counter = 0;
+    for(String k : list.keySet()){
+      if (priceTable.containsKey(k)){
+        double a = list.get(k) * priceTable.get(k);
+       counter += a;
+
+      }
+    }
+    System.out.println(counter);
     
   }
+
 }
