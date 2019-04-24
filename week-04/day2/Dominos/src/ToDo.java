@@ -14,7 +14,7 @@ public class ToDo implements Comparable<ToDo> {
     int result = Boolean.compare(this.completed, action.completed);
      if (result != 0){
        return result;
-     }else {this.description.compareTo(action.description);
+     }else {result = this.description.compareTo(action.description);
      }
      return result;
   }

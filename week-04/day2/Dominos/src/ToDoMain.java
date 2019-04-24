@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ToDoMain {
   public static void main(String[] args) {
@@ -9,26 +10,23 @@ public class ToDoMain {
   ToDo obs = new ToDo("Remove obstacles");
   ToDo stand = new ToDo("Stand up");
   ToDo eat = new ToDo("Eat lunch");
+  ToDo elev = new ToDo("Elevate yourself");
+  ToDo sit = new ToDo ("Sit down for ten minutes");
 
   obs.complete();
   eat.complete();
+  elev.complete();
 
   toDoList.add(milk);
   toDoList.add(obs);
   toDoList.add(stand);
   toDoList.add(eat);
+  toDoList.add(elev);
 
-  for(int i = 0; i < toDoList.thingsToDo.size()-1; i++){
-    System.out.println(toDoList.thingsToDo.get(i).compareTo(toDoList.thingsToDo.get(toDoList.thingsToDo.indexOf(i)+1)));
-      if(toDoList.thingsToDo.get(i).compareTo(toDoList.thingsToDo.get(toDoList.thingsToDo.indexOf(i+1))) != 0){
-       toDoList.swap(i+1);
-      }
+  toDoList.thingsToDo.add(4, sit);
 
-
-  }
-
-
-
+  toDoList.thingsToDo.sort(ToDo::compareTo);
+  Collections.reverse(toDoList.thingsToDo);
 
   System.out.println(toDoList);
 }

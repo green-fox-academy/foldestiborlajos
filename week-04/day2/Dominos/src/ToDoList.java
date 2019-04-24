@@ -21,10 +21,5 @@ public class ToDoList{
       }
       return result;
     }
-
-    public void swap(Integer indexToMoveForward){
-    this.thingsToDo.add( 0,thingsToDo.get(indexToMoveForward));
-    this.thingsToDo.remove(thingsToDo.get(indexToMoveForward+1));
-
-    }
 }
+
