@@ -50,7 +50,7 @@ public class ShopingList {
       }
     }
     System.out.println(counter);
-    
+
   }
 
 }
