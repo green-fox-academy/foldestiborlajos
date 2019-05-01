@@ -8,7 +8,7 @@ public class TicTacToe {
   public static void main(String[] args) {
 
   }
-  public static String ticTacToe(String input){
+  public String ticTacToe(String input){
     Path game = Paths.get(input);
     try {
       List<String> parsedGame = Files.readAllLines(game);

@@ -1,16 +1,12 @@
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public class PersonalFinance {
     public static void main(String[] args) {
         List<Integer> spend = Arrays.asList(500, 1000, 1250, 175, 800, 120);
          application (spend);
-
-
+      System.out.println(spend.toString());
     }
 
     public static void application(List<Integer> arrl) {

@@ -28,6 +28,7 @@ public class Reservation implements Reservatory {
     String result = stringBuilder.toString();
     return result;
   }
+
   public void generateReservation(int numOfReservations){
     if (numOfReservations <= 0){
       System.out.println( "That's it.");

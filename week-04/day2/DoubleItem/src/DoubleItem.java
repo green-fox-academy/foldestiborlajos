@@ -9,6 +9,7 @@ public class DoubleItem {
     numList2[i] = numList[i] * 2;
   }
     System.out.println(Arrays.toString(numList2));
-
+    System.out.println(numList.toString());
+    System.out.println(Arrays.toString(numList2));
   }
 }

@@ -10,7 +10,6 @@ public class WriteMultipleLines {
      Path multiple = Paths.get("src/multiple");
       multipleLines("src/multiple", "apple&soda", 78);
 
-
   }
   public static void multipleLines(String path, String word, int number){
     Path dest = Paths.get(path);

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb185f0b-d9e2-4293-8a53-ae3b65d11b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ParametricAverage/src/ParametricAverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DrawAChessTable/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DrawAChessTable/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-02/day2/PersonalFinance/src/PersonalFinance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-02/day2/PersonalFinance/src/PersonalFinance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-03/day2/CopyFile/src/CopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day2/CopyFile/src/CopyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-03/day2/CountLines/src/CountLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day2/CountLines/src/CountLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-03/day2/TicTacToe/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day2/TicTacToe/src/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-03/day2/WriteMultipleLines/src/WriteMultipleLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day2/WriteMultipleLines/src/WriteMultipleLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-03/day2/WriteSingleLine/src/WriteSingleLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-03/day2/WriteSingleLine/src/WriteSingleLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/day2/CharSequence/src/Gnirts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-04/day2/CharSequence/src/Gnirts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/day2/CharSequence/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-04/day2/CharSequence/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/day2/DoubleItem/src/DoubleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-04/day2/DoubleItem/src/DoubleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-04/day2/Reservation/src/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-04/day2/Reservation/src/Reservation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DrawADiagonal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="340">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -66,7 +73,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,6 +84,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -85,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PartyIndicator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../week-02/day1/Matrix" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -127,16 +134,17 @@
       <updated>1554564898994</updated>
       <workItem from="1554564901628" duration="10174000" />
       <workItem from="1554666633006" duration="101000" />
+      <workItem from="1556263788280" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10275000" />
+    <option name="totallyTimeSpent" value="10307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="914" height="733" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25526932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26112413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -173,8 +181,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DrawADiagonal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="340">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
         </state>
       </provider>
     </entry>

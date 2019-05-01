@@ -13,7 +13,7 @@ public class CountLines {
 
   }
 
-  public static int countLines( String  fileName) {
+  public static int countLines( String fileName) {
     Path inputName = Paths.get(fileName);
 
     try {

@@ -5,8 +5,6 @@ public class Gnirts implements CharSequence{
     this.str = str;
   }
 
-
-
   public int length() {
     return str.length();
   }
@@ -15,7 +13,7 @@ public class Gnirts implements CharSequence{
     return this.str.charAt(str.length()-index);
   }
 
-  public CharSequence subSequence(int start, int end) {
+  public CharSequence subSequence(int start, int end){
     return null;
   }
 }
