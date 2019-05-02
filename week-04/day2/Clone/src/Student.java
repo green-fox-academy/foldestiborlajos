@@ -1,9 +1,9 @@
-public class Student extends Person implements Cloneable{
+public class Student extends Person implements Cloneable {
 
   protected String previousOrganization;
   protected int skippedDays;
 
-  public Student( String name, int age, String gender, String previousOrganization) {
+  public Student(String name, int age, String gender, String previousOrganization) {
     super(name, age, gender);
     this.previousOrganization = previousOrganization;
     skippedDays = 0;
@@ -15,19 +15,17 @@ public class Student extends Person implements Cloneable{
     skippedDays = 0;
   }
 
-
-  public Student clone( ) {
+  public Student clone() {
     Student cloned = new Student();
-    try {
-     cloned = (Student) super.clone();
+    try{
+      cloned = (Student) super.clone();
     } catch (CloneNotSupportedException e) {
       e.printStackTrace();
     }
     return cloned;
   }
 
-
-  public void setPreviousOrganization(String previousOrganization){
+  public void setPreviousOrganization(String previousOrganization) {
     this.previousOrganization = previousOrganization;
   }
 
@@ -50,7 +48,7 @@ public class Student extends Person implements Cloneable{
   @Override
   public void introduce() {
     System.out.println("Hi, I'm " + name + ", a" + age + "year old " + gender + ", who skipped " +
-            skippedDays + "already");
+        skippedDays + "already");
   }
 
   public int skipDays(int numberOfDays) {
