@@ -10,7 +10,6 @@ public class Copy {
   public static void main(String[] args) {
   }
 
-
   public static void copy() {
     System.out.println("copy [source][destination]");
   }
