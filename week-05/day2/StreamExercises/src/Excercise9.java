@@ -5,7 +5,7 @@ public class Excercise9 {
 
   public static void main(String[] args) {
 
-    System.out.println(letterFrequency("alabama", 'k'));
+    System.out.println(letterFrequency("alabama", 'a'));
 
   }
 
