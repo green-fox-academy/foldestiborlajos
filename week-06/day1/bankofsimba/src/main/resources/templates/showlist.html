@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>show list</title>
+</head>
+<body>
+<table>
+  <thead>
+  <th> Name </th>
+  <th> Balance </th>
+  <th> Race</th>
+  <th> Id</th>
+  <th> Morality</th>
+  </thead>
+  <a href = "/raisebalance">Raising</a>
+  <a href = "/create">Create New Account</a>
+
+  <tbody th:each = "acc : ${list}">
+
+    <div th:if="${acc.isKing()}">
+      <tr th:style="'background-color:grey'" >
+      <td th:text="|${acc.name}|" ></td>
+      <td th:text="|${acc.balance}|"></td>
+      <td th:text="|${acc.animalType}|"></td>
+      <td th:text="|${accStat.index}|"></td>
+        <td th:switch="${acc.isGood()}">
+        <div th:case="${true}"
+             th:text="'Good'"></div>
+        <div th:case="${false}"
+             th:text="'Bad Guy'"> </div> </td>
+      </tr>
+    </div>
+    <div th:if="${acc.isKing()!= true}">
+      <tr>
+        <td th:text="|${acc.name}|" ></td>
+        <td th:text="|${acc.balance}|"></td>
+        <td th:text="|${acc.animalType}|"></td>
+        <td th:text="|${accStat.index}|"></td>
+        <td th:switch="${acc.isGood()}">
+          <div th:case="${true}"
+               th:text="'Good'"></div>
+          <div th:case="${false}"
+               th:text="'Bad Guy'"> </div> </td>
+      </tr>
+    </div>
+    </tr>
+    </div>
+  </tbody>
+</table>
+</body>
+</html>

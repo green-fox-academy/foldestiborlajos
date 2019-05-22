@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html  xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Account</title>
+</head>
+<body>
+
+<p th:text="|owner: ${account.name}  balance: ${#conversions.convert(account.getBalance(),'Double')} Zebra animaltype: ${account.getAnimalType()}|" ></p>
+
+</body>
+</html>

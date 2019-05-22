@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+  <meta charset="UTF-8">
+  <title>Add new account</title>
+</head>
+<body>
+<h1> New Account </h1>
+<form th:action="@{/create}" th:method="post" th:object="${account}">
+  <input type="text" name="name" id="name" th:field="*{name}" required>
+  <input type="text" name="balance" id="balance" th:field="*{balance}" required>
+  <input type="text" name="race" id="race" th:field="*{animalType}" required>
+  <button type="submit"> Post </button>
+</form>
+</body>
+</html>
