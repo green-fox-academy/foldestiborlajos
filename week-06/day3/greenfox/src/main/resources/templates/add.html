@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.tyhmeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add</title>
+</head>
+<body>
+<form th:method="post" th:action="@{save}">
+  <label for="name" > New Student</label>
+  <input type="text" name="name" id="name" required >
+  <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
