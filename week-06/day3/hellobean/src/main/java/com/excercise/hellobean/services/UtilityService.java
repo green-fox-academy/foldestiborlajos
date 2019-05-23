@@ -24,12 +24,13 @@ public class UtilityService {
       return colors.get(random.nextInt(colors.size()));
     }
 
-    public String validiateEmail(String emailInput){
+
+    public boolean colorValidEmail(String emailInput){
       if(emailInput.chars().anyMatch(ch->ch=='@') && emailInput.chars().anyMatch(ch->ch=='.')){
-       return emailInput + " is valid e-mail address";
+        return true;
       }else{
-       return emailInput + " is not valid e-mail address";
-     }
+        return false;
+      }
     }
 
   public String caesar(String text, int number) {

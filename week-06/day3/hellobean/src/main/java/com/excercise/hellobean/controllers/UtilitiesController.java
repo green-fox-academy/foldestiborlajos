@@ -30,7 +30,8 @@ public class UtilitiesController {
 
   @GetMapping("/useful/email")
   public String isMailValid(Model model, @RequestParam (name ="input", required = false) String inputEmail){
-    model.addAttribute("resultOfValid",utilityService.validiateEmail(inputEmail));
+    model.addAttribute("inputEmail",inputEmail);
+    model.addAttribute("emailValid", utilityService.colorValidEmail(inputEmail));
     return "email";
   }
 

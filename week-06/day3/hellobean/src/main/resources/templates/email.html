@@ -6,7 +6,9 @@
   <title>Is It An Email?</title>
 </head>
 <body>
-<p th:text="${resultOfValid}">
-
+<div th:switch="${emailValid}">
+<p th:case="${true}" style="color: green" th:text="|${inputEmail} is a valid address|"></p>
+<p th:case="${false}" style="color: brown" th:text="|${inputEmail}is not a valid address|"></p>
+</div>
 </body>
 </html>
