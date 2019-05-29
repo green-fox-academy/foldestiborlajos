@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>table</title>
+  <link rel="stylesheet" type="text/css" href="/tablestyle.css">
+</head>
+<body>
+<h1 class="line"> To Do's</h1>
+<div class="link">
+<a  href="/todo/create"> Add new entry </a>
+  <a href="/todo/table?isActive=true">Show active</a>
+  <a href="/todo/table">Show all</a>
+  </div>
+<div>
+<table id="table" class="table">
+  <thead>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Urgent</th>
+  <th>Done</th>
+  </thead>
+<tr th:each ="todo:${table}">
+  <td th:text="*{todo.id}"></td>
+  <td id="title" th:text="*{todo.title}"></td>
+  <td th:text="*{todo.urgent}"></td>
+  <td th:text="*{todo.done}"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

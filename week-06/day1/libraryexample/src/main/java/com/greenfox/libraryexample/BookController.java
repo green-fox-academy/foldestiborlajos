@@ -61,13 +61,11 @@ import org.springframework.web.bind.annotation.RequestParam;
       model.addAttribute("book", book);
       return "create";
     }
-
     @RequestMapping(path = "/books/add", method = RequestMethod.POST)
     public String addBook(@ModelAttribute(name = "book") Book book){
       books.add(book);
       return "redirect:/books";
     }
-
 
     private List<Book> filterBooksByAuthor(String author){
       return books.stream()

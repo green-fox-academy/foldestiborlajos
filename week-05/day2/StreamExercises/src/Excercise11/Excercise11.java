@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -35,23 +36,13 @@ public class Excercise11 {
     List<String> wordList = Arrays.asList(bigSentence
         .split(" "));
 
-    Map<String, List<String>> groupedWords= wordList.stream()
-        .filter(word -> word != " ")
-        .filter(word -> word != "")
-        .collect(Collectors.groupingBy(word -> {
-              String match = new String();
-              for (String w : wordList) {
-                if (w.equals((word))) {
-                  match = (String) word;
-                }
-              }
-              return match;
-            }
-            )
-        );
+    Map<String, List<String>> groupedWords = wordList.stream()
+        .filter(word -> word.equals(" ") != true)
+        .collect(Collectors.groupingBy(word -> word));
 
-    System.out.println(groupedWords);
-
+    groupedWords.values()
+        .stream()
+        .sorted(Comparator.comparingInt(list -> list.size() * -1))
+        .forEach(list -> System.out.println(list.get(0) + " : " + list.size()));
   }
 }
-

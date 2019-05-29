@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Fox</title>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<header>
+  <div id="logo">
+    <img src="fox4.gif">
+    </div>
+</header>
+<h1>Warning!!! Existential Error!!!</h1>
+<p>Ooops! We are sorry to tell, but your Fox seems to be non-existent or imaginary ...<br>
+... But we you able to give birth to is. Give her name below. And wait for the magic </p>
+
+<form th:method="post" th:action="@{/create}">
+  <label>name</label>
+  <input type="text" name="name" id="name">
+  <label>password</label>
+  <input type="password" name="password" id="password" >
+
+  <button type="submit">Create Fox</button>
+</form>
+
+  <div th:if="${isAlredyExist}">
+    <p th:text="${alreadyExistMessage}"> </p>
+    </div>
+<div th:unless="${isAlredyExist==false}">
+  <p></p>
+</div>
+
+
+</body>
+</html>

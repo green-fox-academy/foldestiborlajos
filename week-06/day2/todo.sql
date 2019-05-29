@@ -128,7 +128,22 @@ order by due_date;
 
 show tables;
 select*from actions;
-show database;
+
+create database todo;
+use todo;
+show tables;
+show tables;
+
+drop database if exists todo;
+create database todo;
+use todo;
+show tables;
+
+
+
+
+
+
      
  
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<header>
+  <div>
+    <img id="logo" src="fox4.gif">
+  </div>
+  <a href="index.html"><h3>Information</h3></a>
+  <a href=""><h3>Nutrition Store</h3></a>
+</header>
+
+<div>
+  <img id="profile" src="fox3.gif">
+</div>
+
+<div id=status>
+  <div class="info">
+    <h3 th:text="|He is ${fox.getName()}. He currently lives on ${fox.getFood()} and drinks ${fox.getDrink()} |"></h3>
+  </div>
+
+  <div>
+    <h2>Known Tricks</h2>
+    <div th:if="${fox.tricks.isEmpty()}">
+      <p th:text="${emptyTrickMessage}">
+    </div>
+
+    <div th:unless="${!fox.tricks.isEmpty()}">
+      <ul th:each="trick : ${fox.tricks}">
+        <li th:text="*{trick}"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a href="/login"> Log Out</a>
+</div>
+</body>
+</html>

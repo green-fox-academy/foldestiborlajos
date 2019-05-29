@@ -1,0 +1,10 @@
+package com.exercise.todo_sql.repository;
+
+import com.exercise.todo_sql.models.ToDo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ToDoRepository extends CrudRepository<ToDo, Long> {
+
+}
+
