@@ -7,11 +7,18 @@
   <link rel="stylesheet" type="text/css" href="/tablestyle.css">
 </head>
 <body>
+<div class="main">
 <h1 class="line"> To Do's</h1>
 <div class="link">
-<a  href="/todo/create"> Add new entry </a>
-  <a href="/todo/table?isActive=true">Show active</a>
-  <a href="/todo/table">Show all</a>
+<a class="ref" href="/todo/create"> Add new entry </a>
+  <a class="ref" href="/todo/table">Show all</a>
+  <a class="ref" href="/todo/table?isActive=true">Show active</a>
+  <a class="ref" href="/todo/table?isUrgent=true">Show urgent</a>
+  </div>
+  <div class = "search">
+    <form th:action="|@{/todo/table}?title=${searchTitle}|" th:method="get">
+    <input type="search" name="searchTitle" id="searchTitle" placeholder="title">
+    </form>
   </div>
 <div>
 <table id="table" class="table">
@@ -20,14 +27,19 @@
   <th>Title</th>
   <th>Urgent</th>
   <th>Done</th>
+  <th>Delete</th>
+  <th>Edit</th>
   </thead>
-<tr th:each ="todo:${table}">
-  <td th:text="*{todo.id}"></td>
-  <td id="title" th:text="*{todo.title}"></td>
-  <td th:text="*{todo.urgent}"></td>
-  <td th:text="*{todo.done}"></td>
+<tr th:each ="todos:${table}">
+  <td th:text="*{todos.id}"></td>
+  <td id="title" th:text="*{todos.title}"></td>
+  <td th:text="*{todos.urgent}"></td>
+  <td th:text="*{todos.done}"></td>
+  <td><a th:href="|/todo/*{todos.id}/delete|">delete</a></td>
+  <td><a th:href="|/todo/*{todos.id}|">edit</a></td>
 </tr>
 </table>
+</div>
 </div>
 </body>
 </html>

@@ -2,29 +2,39 @@ body{background-color: aqua;
   position: center;
 }
 
+.main{padding-left: 140px;
+       padding-right:70px;}
+
 
 .line{font-family:"sans-serif";
       font-size: 40px;
       position: relative;
       text-align: center;
       color:darkslateblue;}
-
-.link a{
-  font-family: sans-serif;
-  font-size: 30px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+.ref{height: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-decoration: none;
-  display: inline-block;
-  alignment: center;
-  border-radius: 90px;
   background:dodgerblue;
-  color: black;
+  color:darkslategrey;
+  border-radius: 100px;
+  padding:20px;}
+
+.link {
+  font-family: sans-serif;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-left:70px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: inline grid;
+  align-content: center;
   }
 
+
 .table th, tr,td{
+  margin-left: 70px;
+  margin-right: 70px;
   border-collapse: collapse;
   position:relative;
   left: 10px;

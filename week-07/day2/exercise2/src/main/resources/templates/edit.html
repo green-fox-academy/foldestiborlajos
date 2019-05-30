@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+</head>
+<body>
+<div>
+  <p th:text="|It is the no ${todoById.getId()} thing to do|"></p>
+  <form th:action="|/todo/${todoById.getId()}|" th:method="post">
+  <label for="done">Done</label>
+    <input type="radio" id="done" name="done" th:value="${true}">
+
+    <label for="urgent">Urgent?</label>
+    <input type="radio" id="urgent" name="urgent" th:value="${true}">
+    <button type=" submit">Change</button>
+  </form>
+  </div>
+
+</body>
+</html>
