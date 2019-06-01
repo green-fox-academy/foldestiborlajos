@@ -20,7 +20,7 @@ public class Fox {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    long id;
    String name;
-   @OneToMany(fetch = FetchType.EAGER, mappedBy = "id")
+   @OneToMany(fetch = FetchType.EAGER, mappedBy = "fox")
    List<User> users;
    String food;
    String drink;
@@ -30,7 +30,72 @@ public class Fox {
    List<Trick> tricks;
 
    public Fox(){
+      users=new ArrayList<>();
      tricks= new ArrayList<>();
+     this.health=100;
    }
 
+   public long getId() {
+      return id;
+   }
+
+   public void setId(long id) {
+      this.id = id;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public List<User> getUsers() {
+      return users;
+   }
+
+   public void setUsers(List<User> users) {
+      this.users = users;
+   }
+
+   public String getFood() {
+      return food;
+   }
+
+   public void setFood(String food) {
+      this.food = food;
+   }
+
+   public String getDrink() {
+      return drink;
+   }
+
+   public void setDrink(String drink) {
+      this.drink = drink;
+   }
+
+   public int getHealth() {
+      return health;
+   }
+
+   public void setHealth(int health) {
+      this.health = health;
+   }
+
+   public int getAge() {
+      return age;
+   }
+
+   public void setAge(int age) {
+      this.age = age;
+   }
+
+   public List<Trick> getTricks() {
+      return tricks;
+   }
+
+   public void setTricks(List<Trick> tricks) {
+      this.tricks = tricks;
+   }
 }

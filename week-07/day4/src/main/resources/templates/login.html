@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Fox</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<body>
+<header>
+  <div id="logo">
+    <img src="fox4.gif">
+    <h2 class="lead">Welcome</h2>
+  </div>
+  <a href="/register"><h3>Register</h3></a>
+</header>
+<h1>Welcome to Programmers Fox Club</h1>
+<p>Please provide your name and password, so your Fox will associate with you! Probably...</p>
+<form th:method="post" th:action="@{/login}">
+  <label>email</label>
+  <input type="text" name="email" id="email">
+  <label>password</label>
+  <input type="password" name="password" id="password">
+  <button type="submit">Let's go</button>
+</form>
+<div th:if="${passwordFail}">
+  <p th:text="${wrongPasswordMessage}"></p>
+</div>
+</body>
+</html>
+</body>
+</html>

@@ -7,6 +7,5 @@ public interface PasswordService {
 
   List<Password> findAll();
   void save(Password password);
-  Password findPasswordById(long id);
-
+  Password findById(String name);
 }

@@ -6,6 +6,6 @@ import java.util.List;
 public interface FoxService {
   List<Fox> findAll();
   void save(Fox fox);
-  Fox findById(String name);
+  Fox findById(long id);
 
 }

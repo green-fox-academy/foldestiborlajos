@@ -7,6 +7,6 @@ import java.util.List;
 public interface UserService {
   List<User> findAll();
   void save(User user);
-  Fox findById(String name);
+  User findById(String id);
 
 }

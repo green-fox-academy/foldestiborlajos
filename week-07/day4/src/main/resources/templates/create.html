@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Fox</title>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<body>
+<header class="header">
+  <div id="logo">
+    <img src="fox4.gif">
+    </div>
+  <h2 clas="lead">Find Fox</h2>
+</header>
+
+<form th:method="post" th:action="|@{/create}?userId=${userId}|">
+  <label>name</label>
+  <input type="text" name="name" id="name" th:field="${fox.name}"}>
+  <button type="submit">Create Fox</button>
+</form>
+
+  <div th:if="${isAlredyExist}">
+    <p th:text="${alreadyExistMessage}"> </p>
+    </div>
+<div th:unless="${isAlredyExist==false}">
+  <p></p>
+</div>
+
+  <div class="table">
+    <table>
+      <thead>
+         <th> Name <th>
+         <th> Health</th>
+         <th> Others</th>
+         <th> Join </th>
+      <thead>
+      <tr th:each="fox : ${foxes}">
+        <td th:text="${fox.getName()}"></td>
+        <td th:text="${fox.getHealth()}"></td>
+        <td><a th:href="@{/join/${fox.getId()}/${id}}">join </a></td>
+      </tr>
+
+    </table>
+  </div>
+
+
+</body>
+</html>

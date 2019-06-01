@@ -1,0 +1,42 @@
+body{background-color:lightskyblue}
+img{width: 100px;
+    height:130px;
+}
+
+.header{display:block;
+      background: darkslateblue;
+}
+
+.lead{ margin-left: 40px;
+       margin-right: 40px;
+       padding-left: 30px;
+       padding-right: 30px;
+      font-family: "Berlin Sans FB";
+      font-size: 50px}
+
+.table th, tr,td{
+    margin-left: 70px;
+    margin-right: 70px;
+    border-collapse: collapse;
+    position:relative;
+    left: 10px;
+    top:10px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+.table thead th{ width: 200px;
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 10%;
+    margin-left: 0px;
+    text-align: left;
+}

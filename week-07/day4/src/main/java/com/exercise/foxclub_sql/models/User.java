@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,23 +19,47 @@ import lombok.Setter;
 public class User {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  long id;
+  @Column(name="email", nullable = false)
+  String email;
+  @Column(name="name", nullable =true)
   private String name;
   @ManyToOne
   private Password password;
   @ManyToOne
   private Fox fox;
-  private int age;
-  private boolean sex;
   @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
   List<SocialStatus> socialStatus;
 
   public User(){
+
     socialStatus=new ArrayList<>();
   }
 
+  public User(String email){
+    this.email=email;
+  }
 
+  public String getEmail() {
+    return email;
+  }
 
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
+  public Password getPassword() {
+    return password;
+  }
+
+  public void setPassword(Password password) {
+    this.password = password;
+  }
+
+  public Fox getFox() {
+    return fox;
+  }
+
+  public void setFox(Fox fox) {
+    this.fox = fox;
+  }
 }
