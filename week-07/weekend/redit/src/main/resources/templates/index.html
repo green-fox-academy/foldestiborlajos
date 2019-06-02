@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
+<body>
+<div class="header">
+  <a th:href="@{/addPost}"> Add new post </a>
+  <h1 class="liner">Trending Post</h1>
+</div>
+<table>
+  <tr th:each="post:${posts}">
+    <td th:text="${post.popularity}"></td>
+    <td>
+      <a th:href="|@{/raise}?id=${post.id}|">+</a>
+      <a th:href="|@{/reduce}?id=${post.id}|">-</a>
+    </td>
+    <td>*</td>
+    <td><a th:href="${post.url}" th:text="${post.title}"></a></td>
+  </tr>
+</table>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">&raquo;</a>
+</div>
+</body>
+</html>
