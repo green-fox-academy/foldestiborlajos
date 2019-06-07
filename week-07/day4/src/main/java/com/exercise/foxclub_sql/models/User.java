@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,6 +22,7 @@ public class User {
 
   @Id
   @Column(name="email", nullable = false)
+  @Email
   String email;
   @Column(name="name", nullable =true)
   private String name;

@@ -1,4 +1,4 @@
-package com.excercise.rest.model;
+package com.excercise.rest.model.erorrs;
 
 public abstract class Error {
   private String error;

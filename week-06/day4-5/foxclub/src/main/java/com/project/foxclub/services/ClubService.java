@@ -34,8 +34,4 @@ public class ClubService {
     return  this.foxes.stream()
         .anyMatch(fox->fox.getName().equals(inputName));
   }
-
-
-
-
 }

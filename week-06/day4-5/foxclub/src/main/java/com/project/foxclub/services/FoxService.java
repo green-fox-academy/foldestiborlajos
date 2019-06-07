@@ -22,12 +22,4 @@ public class FoxService {
 
     return inputFox;
   }
-
-  public Fox setFood(Fox inputFox, String foodName){
-    foodList.foodItems().(foodName);
-
-  }
-
-
-
 }

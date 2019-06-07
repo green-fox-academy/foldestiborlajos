@@ -6,6 +6,7 @@ import com.exercise.foxclub_sql.repositories.Userable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -38,6 +39,15 @@ public class UserServiceImp implements UserService {
 
   @Override
   public User findById(String id) {
-   return this.userable.findById(id).orElse(null);
+
+    return this.userable.findById(id).orElse(null);
+  }
+
+  public List<User> findUserInFoxListAndRemoveByUserId(String userId) {
+    List<User> resultList = new ArrayList<>();
+      this.findFoxByUserId(userId).getUsers().stream().map(userl -> !userl.getEmail()
+        .equals(this.findById(userId)))
+        .collect(Collectors.toList());
+        return resultList;
   }
 }

@@ -75,5 +75,9 @@ public class ToDoService implements ToDoAble {
         .collect(Collectors.toList());
     return filteredByTitle;
   }
+
+  public List<ToDo> findAllByUrgentIsTrueOrderById(){
+   return toDoRepository.findAllByUrgentIsTrueOrderById();
+  }
 }
 

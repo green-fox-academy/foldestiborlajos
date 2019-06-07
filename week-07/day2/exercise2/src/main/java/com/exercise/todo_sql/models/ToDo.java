@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Pattern;
+
 
 @Entity
 public class ToDo {
@@ -11,6 +13,7 @@ public class ToDo {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   long id;
+  @Pattern(regexp = "/^A-Z/")
   String title;
   boolean urgent;
   boolean done;

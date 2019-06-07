@@ -1,35 +1,34 @@
-package com.excercise.rest.model;
+package com.excercise.rest.service;
 
+import com.excercise.rest.model.Number;
+import org.springframework.stereotype.Service;
+
+@Service
 public class Until {
-  Number inputNumber;
 
-  public Until(Number inputNumber){
-    this.inputNumber = inputNumber;
+  public Until(){
+
   }
 
-  public Integer sum(){
+  public Number sum(Number hi){
     int result = 0;
-    for(int i = 0; i <= this.inputNumber.getNumber(); i++){
-      result = result + i;
-      i++;
+    for(int i = 0; i <= hi.getNumber(); i++){
+       result += i;
     }
-    return result;
+
+    Number resultNumber = new Number();
+    resultNumber.setNumber(result);
+    return resultNumber;
   }
 
-  public Integer factor(){
-    int result = 0;
-    for(int i = 0; i <= this.inputNumber.getNumber(); i++){
-      result = result * i;
-      i++;
+  public Number factor(Number number){
+    int result = 1;
+    for(int i = 1; i <= number.getNumber(); i++){
+     result = result *= i;
     }
-    return result;
-  }
 
-  public Number getInputNumber() {
-    return inputNumber;
-  }
-
-  public void setInputNumber(Number inputNumber) {
-    this.inputNumber = inputNumber;
+    Number resultNumber = new Number();
+    resultNumber.setNumber(result);
+    return resultNumber;
   }
 }

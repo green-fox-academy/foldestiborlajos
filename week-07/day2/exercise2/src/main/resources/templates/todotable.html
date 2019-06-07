@@ -14,10 +14,11 @@
   <a class="ref" href="/todo/table">Show all</a>
   <a class="ref" href="/todo/table?isActive=true">Show active</a>
   <a class="ref" href="/todo/table?isUrgent=true">Show urgent</a>
+  <a class="ref" href="/todo/table?findFirst=true">Show first urgent</a>
   </div>
   <div class = "search">
     <form th:action="|@{/todo/table}?title=${searchTitle}|" th:method="get">
-    <input type="search" name="searchTitle" id="searchTitle" placeholder="title">
+    <input type="search" name="searchTitle" id="searchTitle" placeholder="title" required pattern="[^A-Za-z]{3}">
     </form>
   </div>
 <div>

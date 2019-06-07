@@ -9,13 +9,18 @@ import com.exercise.foxclub_sql.services.MessageService;
 import com.exercise.foxclub_sql.services.PasswordServiceImp;
 import com.exercise.foxclub_sql.services.UserService;
 import com.exercise.foxclub_sql.services.UserServiceImp;
+import java.util.List;
+import java.util.stream.Collectors;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class LoginController {
@@ -61,11 +66,11 @@ public class LoginController {
     } else {
       model.addAttribute("notRegisteredMessage", messageService.sendNotRegisteredMessage());
       return "redirect:/register";
-    }
+  }
   }
 
   @GetMapping("/create")
-  public String getCreate(Model model, @RequestParam @PathVariable(name="userId")String userId) {
+  public String getCreate(Model model, @RequestParam (name="userId")String userId) {
 
     model.addAttribute("userId", userId);
     model.addAttribute("fox", new Fox());
@@ -78,15 +83,19 @@ public class LoginController {
     foxServiceImp.save(fox);
     fox.getUsers().add(userServiceImp.findById(userId));
     foxServiceImp.save(fox);
+    User user = userServiceImp.findById(userId);
+    user.setFox(fox);
+    userServiceImp.save(user);
     return "redirect:/login";
   }
 
   @GetMapping("/join/{foxId}/{userId}")
-  public String getJoin(@PathVariable(name = "foxId") String foxId,
+  public String getJoin(@PathVariable(name = "foxId") Long foxId,
       @PathVariable(name = "userId") String userId) {
-    Fox fox = foxServiceImp.findById(Long.parseLong(foxId));
+    Fox fox = foxServiceImp.findById(foxId);
     User user = userServiceImp.findById(userId);
     fox.getUsers().add(user);
+    userServiceImp.findUserInFoxListAndRemoveByUserId(userId);
     user.setFox(fox);
     userServiceImp.save(user);
     foxServiceImp.save(fox);
@@ -102,7 +111,11 @@ public class LoginController {
   }
 
   @PostMapping("/register")
-  public String register( String password, User user) {
+  public String register( String password, @Valid User user, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+     if(bindingResult.hasErrors()){
+       redirectAttributes.addAttribute("user", user.getEmail());
+       return "registryform";
+     }else{
       userServiceImp.save(user);
       passwordServiceImp.registerPassword(password);
       Password pass = passwordServiceImp.findById(password);
@@ -112,6 +125,6 @@ public class LoginController {
       pass.getUsers().add(user);
       passwordServiceImp.save(pass);
 
-      return "redirect:/create?userId="+user.getEmail();
+      return "redirect:/create?userId="+user.getEmail();}
     }
   }

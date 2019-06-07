@@ -1,37 +1,41 @@
-package com.excercise.rest.model;
+package com.excercise.rest.model.erorrs;
+
+import com.excercise.rest.model.erorrs.Error;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 public class GreeterError extends Error {
-  private String error1;
-  private String error
+  private String errorNameTitle;
+  private String errorName;
+  private String errorTitle;
+
   public GreeterError(){
     super();
+    errorNameTitle = "Please provide a name and a title!";
+    errorName = "Please provide a name!";
+    errorTitle = "Please provide a title!";
   }
 
-
-
-  @Override
-  public String getError() {
-    return error;
+  public String getErrorNameTitle () {
+    return errorNameTitle;
   }
 
-  @Override
-  public void setError(String error) {
-    this.error = error;
+  public void setErrorNameTitle(String errorNameTitle) {
+    this.errorNameTitle = errorNameTitle;
   }
 
-  public String getTitle() {
-    return title;
+  public String getErrorName() {
+    return errorName;
   }
 
-  public void setTitle(String title) {
-    this.title = title;
+  public void setErrorName(String errorName) {
+    this.errorName = errorName;
   }
 
-  public String getName() {
-    return name;
+  public String getErrorTitle() {
+    return errorTitle;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setErrorTitle(String erorrTitle) {
+    this.errorTitle = erorrTitle;
   }
 }
